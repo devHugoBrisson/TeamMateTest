@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorAroundMe">#EF6C00</color>
+    <color name="colorActivity">#FFEB3B</color>
+    <color name="colorHome">#FF4081</color>
+    <color name="colorChat">#2196F3</color>
+    <color name="colorSetting">#757575</color>
+
+    <color name="colorNotificationMenu">#EF5350</color>
+    <color name="colorRating">#FFEB3B</color>
+    <color name="colorMoney">#43A047</color>
+
+    <color name="colorFacebook">#3B5998</color>
+    <color name="colorGoogleMore">#d34836</color>
+
+    <color name="colorWoman">#F57FE3</color>
+    <color name="colorMan">#5299CC</color>
+
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorClickItem">#f7f7f7</color>
+
+</resources>

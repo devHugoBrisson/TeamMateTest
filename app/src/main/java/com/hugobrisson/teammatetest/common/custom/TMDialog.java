@@ -22,27 +22,30 @@ public class TMDialog extends Dialog implements View.OnClickListener {
     private AppCompatTextView mTvTitle, mTvDesc, mTvValid, mTvCancel;
     private AppCompatEditText mEtDialog;
     private RecyclerView mRvDialog;
+    private boolean mTwoButton;
 
     private Context mContext;
-    private String mTitle, mDesc;
+    private int mTitle, mDesc,mHint;
     private View.OnClickListener mClickListener;
     private ItemListener mItemClickListener;
     private List<String> mInfoList;
 
-    public TMDialog(Context context, String sTitle, String sDesc, View.OnClickListener sClickListener) {
+    public TMDialog(Context context, int sTitle, int sDesc, boolean sTwoButton, View.OnClickListener sClickListener) {
         super(context);
         mContext = context;
         mTitle = sTitle;
         mDesc = sDesc;
+        mTwoButton = sTwoButton;
         mClickListener = sClickListener;
         initDialog(TMDialogType.INFO);
     }
 
-    public TMDialog(Context context, String sTitle, View.OnClickListener sClickListener) {
+    public TMDialog(Context context, int sTitle, int sDesc, int sHint) {
         super(context);
         mContext = context;
         mTitle = sTitle;
-        mClickListener = sClickListener;
+        mDesc = sDesc;
+        mHint = sHint;
         initDialog(TMDialogType.EDIT);
     }
 
@@ -69,9 +72,18 @@ public class TMDialog extends Dialog implements View.OnClickListener {
                 mTvDesc = (AppCompatTextView) findViewById(R.id.tv_dialog_desc);
                 mTvDesc.setText(mDesc);
                 mTvDesc.setVisibility(View.VISIBLE);
+                if (!mTwoButton) {
+                    mTvCancel.setVisibility(View.GONE);
+                }
                 break;
             case EDIT:
+                if (mDesc != 0) {
+                    mTvDesc = (AppCompatTextView) findViewById(R.id.tv_dialog_desc);
+                    mTvDesc.setText(mDesc);
+                    mTvDesc.setVisibility(View.VISIBLE);
+                }
                 mEtDialog = (AppCompatEditText) findViewById(R.id.et_dialog);
+                mEtDialog.setHint(mHint);
                 mEtDialog.setVisibility(View.VISIBLE);
                 break;
             case LIST:
@@ -94,6 +106,14 @@ public class TMDialog extends Dialog implements View.OnClickListener {
         show();
     }
 
+    public void addClickListener(View.OnClickListener sClickListener){
+        mClickListener = sClickListener;
+    }
+
+    public void setTextError(String sError) {
+        mEtDialog.setError(sError);
+    }
+
     public String getText() {
         return mEtDialog.getText().toString();
     }
@@ -103,11 +123,13 @@ public class TMDialog extends Dialog implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.tv_dialog_valid:
                 if (mEtDialog == null) {
-                    mClickListener.onClick(v);
+                    if(mClickListener!=null){
+                        mClickListener.onClick(v);
+                    }
+                    dismiss();
                 } else {
                     mClickListener.onClick(mEtDialog);
                 }
-                dismiss();
                 break;
             case R.id.tv_dialog_cancel:
                 dismiss();

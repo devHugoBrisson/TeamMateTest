@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "381243653031",
+    "firebase_url": "https://project-8873277826151324015.firebaseio.com",
+    "project_id": "project-8873277826151324015",
+    "storage_bucket": "project-8873277826151324015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381243653031:android:c5fdb23f09ee248c",
+        "android_client_info": {
+          "package_name": "com.hugobrisson.teammatetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381243653031-o2vnq8p19ibm3macuioasshh9nfdsd6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP89wmqbM4Cw3TOcRImLrhYj_kVqhC8yg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

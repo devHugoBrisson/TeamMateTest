@@ -25,4 +25,9 @@
     <color name="colorDivider">#B6B6B6</color>
     <color name="colorClickItem">#f7f7f7</color>
 
+    <color name="colorBirthDay">#C2185B</color>
+    <color name="colorGender">#FF5722</color>
+    <color name="colorUsername">@color/colorPrimaryLight</color>
+    <color name="colorPhoto">#2E7D32</color>
+
 </resources>

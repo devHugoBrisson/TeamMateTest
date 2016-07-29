@@ -3,7 +3,6 @@ package com.hugobrisson.teammatetest.common;
 import android.content.Intent;
 import android.support.design.widget.AppBarLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,7 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.hugobrisson.teammatetest.common.listener.ActivityListener;
-import com.hugobrisson.teammatetest.common.manager.CFDFragmentManager;
+import com.hugobrisson.teammatetest.common.manager.FragmentManager;
 import com.hugobrisson.teammatetest.common.model.TMFragmentType;
 
 public abstract class ActivityController extends AppCompatActivity implements ActivityListener {
@@ -30,20 +29,20 @@ public abstract class ActivityController extends AppCompatActivity implements Ac
     }
 
     @Override
-    public void onChangeFragment(FragmentManager fragmentManager, Fragment fragment, TMFragmentType fragmentType) {
+    public void onChangeFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment, TMFragmentType fragmentType) {
         Log.v(TAG, "onChangeFragment");
         if (getIntent() != null && getIntent().getExtras() != null) {
             fragment.setArguments(getIntent().getExtras());
         }
         switch (fragmentType) {
             case INIT:
-                CFDFragmentManager.initFragment(fragmentManager, fragment);
+                FragmentManager.initFragment(fragmentManager, fragment);
                 break;
             case NORMAL:
-                CFDFragmentManager.changeFragment(fragmentManager, fragment);
+                FragmentManager.changeFragment(fragmentManager, fragment,false);
                 break;
             default:
-                CFDFragmentManager.changeFragment(fragmentManager, fragment);
+                FragmentManager.changeFragment(fragmentManager, fragment,false);
                 break;
         }
     }
@@ -77,10 +76,4 @@ public abstract class ActivityController extends AppCompatActivity implements Ac
             }
         }
     }
-
-    public void hideToolbarActivity() {
-        mAppBar.setVisibility(View.GONE);
-        mToolbar.setVisibility(View.GONE);
-    }
-
 }

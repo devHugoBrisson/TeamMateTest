@@ -8,9 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.io.File;
 
-/**
- * Created by hugobrisson on 18/02/16.
- */
 public class TMPathFileUtils {
 
     public static void launchBrowserFile(AppCompatActivity context) {

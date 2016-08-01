@@ -5,7 +5,7 @@
     <string name="forgot_password"><u>Mot de passe oublié ?</u></string>
     <string name="log_in">Se connecter</string>
     <string name="sign_in"><u>S\'inscrire</u></string>
-    <string name="sign_in_to">S\'inscrire avec</string>
+    <string name="sign_in_to">S\'inscrire via</string>
     <string name="facebook">Facebook</string>
     <string name="google_more">Google +</string>
     <string name="confirmation">Confirmation</string>
@@ -25,6 +25,7 @@
     <string name="next_activity">Prochaine activité aura lieu le</string>
     <string name="see_activity">voir l\'activité</string>
     <string name="error_all_fields">Veuillez remplir tous les champs</string>
+    <string name="error_authentication_fields">L\'email et/ou le mot de passe sont vides</string>
     <string name="name">Nom</string>
     <string name="birth_date">Date d\'anniversaire</string>
     <string name="error_different_password">Le mot de passe n\'est pas identique</string>
@@ -37,7 +38,41 @@
     <string name="dialog_title_delete_info">Suppression d\'information</string>
     <string name="dialog_desc_delete_info">Etes vous sur de vouloir supprimer l\'information %1$s de votre profil ?</string>
     <string name="research">Rechercher</string>
+    <string name="error_username_size">Le pseudo doit etre composé de 6 caractères</string>
 
+
+    /* faceboook */
+    <string name="facebook_app_id">576400575876201</string>
+    <string name="no_account"><u>Pas de compte ? Créez-en un</u></string>
+    <string name="error_password_size">Le mot de passe doit etre composé de 6 caractères</string>
+    <string name="error_format_mail">L\'email est incorrecte</string>
+    <string name="error_authentication_no_user">Connexion imposible. Verifiez votre email et mot de passe</string>
+    <string name="error_register_no_user">Inscription imposible. Verifiez votre email et mot de passe</string>
+    <string name="error_no_internet">Aucune connexion internet</string>
+    <string name="authentication">Authentification</string>
+    <string name="sign_in_with">Se connecter via</string>
+    <string name="error_password_different">les mot de passe sont différent</string>
+    <string name="register_birthday_desc">Vous permettra si vous le désirer de trouver des <b>TeamMaters</b> selon votre âge</string>
+    <string name="register_birthday_title">Anniversaire</string>
+    <string name="register_birthday_hint">Choisissez votre date</string>
+    <string name="register_gender_desc">Vous permettra de choisir si vous le désirer des <b>TeamMaters</b> de votre sexe ou non</string>
+    <string name="register_gender_title">Genre</string>
+    <string name="register_username_hint">Votre Pseudo</string>
+    <string name="register_username_desc">Vous permettra d\'être reconnu au près des <b>TeamMaters</b></string>
+    <string name="register_username_title">Nom d\'utilisateur</string>
+    <string name="register_photo_title">Photo de profil</string>
+    <string name="register_photo_desc">(Falcultatif) \n Votre photo de profil permettra d\'ètre reconnu plus facilement par les autres <b>TeamMaters</b></string>
+    <string name="register_next">Suivant</string>
+    <string name="register_back">Précédent</string>
+    <string name="register_done">Terminé</string>
+    <string name="error_complete_account">Impossible de terminer la finalisation du compte</string>
+    <string name="complete_account_title">Finalisation de votre compte</string>
+    <string name="dialog_reset_password">Réinitialisation du mot de passe</string>
+    <string name="dialog_reset_password_desc">Veuillez entrer votre email afin de recevoir un mail contenant un lien permettant de réinitialiser votre mot de passe</string>
+    <string name="dialog_info_title">Information</string>
+    <string name="dialog_info_password_desc">Un mail vient de vous être envoyé sur votre adresse mail</string>
+    <string name="dialog_error">Erreur</string>
+    <string name="dialog_error_mail">L\'email que vous avez saisis n\'existe pas</string>
 
     <string-array name="accountTabTitles">
         <item>Actualités</item>

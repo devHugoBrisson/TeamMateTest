@@ -4,18 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:gravity="center"
     android:padding="@dimen/activity_vertical_margin"
-    tools:context=".SplashscreenActivity">
+    tools:context=".module.splashScreen.SplashScreenActivity">
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Laureen APP"
+        android:text="@string/app_name"
         android:textAllCaps="true"
+        android:layout_centerInParent="true"
         android:textColor="@android:color/white"
-        android:textSize="25sp"
-        android:visibility="invisible" />
+        android:textSize="25sp" />
 
 </RelativeLayout>

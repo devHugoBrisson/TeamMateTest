@@ -14,6 +14,7 @@ public class Sport extends BaseModel {
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_ICON = "icon";
+    public static final String COLUMN_LAST_UPDATED = "lastUpdated";
 
     @PrimaryKey
     @Column(name = COLUMN_ID)
@@ -24,6 +25,9 @@ public class Sport extends BaseModel {
 
     @Column(name = COLUMN_ICON)
     public String icon;
+
+    @Column(name = COLUMN_LAST_UPDATED)
+    public long lastUpdated;
 
     public Sport() {
     }
@@ -57,4 +61,13 @@ public class Sport extends BaseModel {
     public void setIcon(String icon) {
         this.icon = icon;
     }
+
+    public long getLastUpdated() {
+        return lastUpdated;
+    }
+
+    public void setLastUpdated(long lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
 }
+

@@ -12,9 +12,9 @@ public class FragmentManager {
 
     public static String TAG = FragmentManager.class.getSimpleName();
 
-    public static void initFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment){
+    public static void initFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment) {
         Log.v(TAG, "initFragment");
-        for(int i = 0; i < fragmentManager.getBackStackEntryCount(); ++i) {
+        for (int i = 0; i < fragmentManager.getBackStackEntryCount(); ++i) {
             fragmentManager.popBackStack();
         }
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -23,18 +23,21 @@ public class FragmentManager {
         fragmentTransaction.commit();
     }
 
-    public static void changeFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment){
+    public static void changeFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment, boolean isAnimated) {
         Log.v(TAG, "changeFragment");
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        if (isAnimated) {
+            fragmentTransaction.setCustomAnimations(R.anim.slide_right_in,R.anim.slide_left_out,R.anim.slide_left_in,R.anim.slide_right_out);
+        }
         fragmentTransaction.replace(R.id.fragment_container, fragment, fragment.getClass().getName());
         fragmentTransaction.addToBackStack(fragment.getClass().getName());
         fragmentTransaction.commit();
     }
 
-    public static void changeTransactionFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment, View view){
+    public static void changeTransactionFragment(android.support.v4.app.FragmentManager fragmentManager, Fragment fragment, View view) {
         Log.v(TAG, "changeFragment");
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.addSharedElement(view,"sharedImage");
+        fragmentTransaction.addSharedElement(view, "sharedImage");
         fragmentTransaction.replace(R.id.fragment_container, fragment, fragment.getClass().getName());
         fragmentTransaction.addToBackStack(fragment.getClass().getName());
         fragmentTransaction.commit();

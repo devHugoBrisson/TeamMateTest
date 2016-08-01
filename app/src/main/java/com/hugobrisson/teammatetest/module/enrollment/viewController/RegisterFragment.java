@@ -97,7 +97,9 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
                 @Override
                 public void onFailed(Exception e) {
                     tLoader.hide();
-                    SnackbarManager.show(getView(), getString(R.string.error_authentication_no_user));
+                    if (e != null) {
+                        SnackbarManager.show(getView(), getString(R.string.error_authentication_no_user));
+                    }
                 }
             });
         } else {
@@ -107,3 +109,4 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
 
 
 }
+

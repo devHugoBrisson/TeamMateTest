@@ -22,3 +22,4 @@ public class SportDao extends DaoCommon<Sport> {
         return mInstance;
     }
 }
+

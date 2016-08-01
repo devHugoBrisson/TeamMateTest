@@ -19,3 +19,4 @@ public interface ServiceInterface<T> {
     void delete(String id, ResponseListener<T> responseListener);
 
 }
+

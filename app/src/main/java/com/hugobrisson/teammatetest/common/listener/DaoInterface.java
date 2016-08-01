@@ -12,3 +12,4 @@ public interface DaoInterface<T extends BaseModel> {
     List<T> getByValue(String value, NameAlias key);
 
 }
+

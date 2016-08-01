@@ -39,10 +39,10 @@ public abstract class ActivityController extends AppCompatActivity implements Ac
                 FragmentManager.initFragment(fragmentManager, fragment);
                 break;
             case NORMAL:
-                FragmentManager.changeFragment(fragmentManager, fragment);
+                FragmentManager.changeFragment(fragmentManager, fragment,false);
                 break;
             default:
-                FragmentManager.changeFragment(fragmentManager, fragment);
+                FragmentManager.changeFragment(fragmentManager, fragment,false);
                 break;
         }
     }
@@ -77,3 +77,4 @@ public abstract class ActivityController extends AppCompatActivity implements Ac
         }
     }
 }
+

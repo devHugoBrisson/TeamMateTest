@@ -42,7 +42,7 @@
 
 
     /* faceboook */
-    <string name="facebook_app_id">576400575876201</string>
+    <string name="facebook_app_id">586296528219939</string>
     <string name="no_account"><u>Pas de compte ? Créez-en un</u></string>
     <string name="error_password_size">Le mot de passe doit etre composé de 6 caractères</string>
     <string name="error_format_mail">L\'email est incorrecte</string>
@@ -74,6 +74,8 @@
     <string name="dialog_error">Erreur</string>
     <string name="dialog_error_mail">L\'email que vous avez saisis n\'existe pas</string>
 
+    <string name="fb_login_protocol_scheme">fb586296528219939</string>
+
     <string-array name="accountTabTitles">
         <item>Actualités</item>
         <item>Informations</item>
@@ -86,3 +88,4 @@
     </string-array>
 
 </resources>
+

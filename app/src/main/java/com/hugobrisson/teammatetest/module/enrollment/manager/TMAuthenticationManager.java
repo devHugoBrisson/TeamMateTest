@@ -3,6 +3,7 @@ package com.hugobrisson.teammatetest.module.enrollment.manager;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -117,13 +118,14 @@ public class TMAuthenticationManager {
                     }
                 }
             });
+        }else{
+            responseListener.onFailed(null);
         }
     }
 
-    public void signInWithFacebook(Fragment fragment, final ResponseListener<AuthResult> responseListener) {
+    public void signInWithFacebook(AppCompatActivity sActivity, final ResponseListener<AuthResult> responseListener) {
         CallbackManager callbackManager = CallbackManager.Factory.create();
         LoginManager loginManager = LoginManager.getInstance();
-        loginManager.logInWithReadPermissions(fragment, Arrays.asList("email", "public_profile"));
         loginManager.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
@@ -143,6 +145,7 @@ public class TMAuthenticationManager {
                 responseListener.onFailed(error);
             }
         });
+        loginManager.logInWithReadPermissions(sActivity, Arrays.asList("email", "public_profile"));
     }
 
     private void handleFacebookAccessToken(AccessToken token, final ResponseListener<AuthResult> responseListener) {

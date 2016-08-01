@@ -35,6 +35,7 @@
             <id />
           </State>
           <State>
+<<<<<<< HEAD
             <id>Abstraction issuesJava</id>
           </State>
           <State>
@@ -45,20 +46,43 @@
           </State>
           <State>
             <id>Class metricsJava</id>
+=======
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>C/C++</id>
+>>>>>>> origin/master
           </State>
           <State>
             <id>Code style issuesJava</id>
           </State>
           <State>
+<<<<<<< HEAD
             <id>Declaration redundancyJava</id>
           </State>
           <State>
             <id>Error handlingJava</id>
+=======
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Declaration orderC/C++</id>
+>>>>>>> origin/master
           </State>
           <State>
             <id>Groovy</id>
           </State>
           <State>
+<<<<<<< HEAD
             <id>Java</id>
           </State>
           <State>
@@ -69,11 +93,27 @@
           </State>
           <State>
             <id>Naming ConventionsGroovy</id>
+=======
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+>>>>>>> origin/master
           </State>
           <State>
             <id>Naming conventionsJava</id>
           </State>
           <State>
+<<<<<<< HEAD
             <id>Security issuesJava</id>
           </State>
         </expanded-state>
@@ -82,6 +122,14 @@
             <id>Android</id>
           </State>
         </selected-state>
+=======
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+        </expanded-state>
+>>>>>>> origin/master
       </profile-state>
     </entry>
   </component>
@@ -95,7 +143,11 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+>>>>>>> origin/master
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
@@ -105,7 +157,22 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>1.8</last-edited>
+=======
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+>>>>>>> origin/master
           <splitter-proportions>
             <option name="proportions">
               <list>

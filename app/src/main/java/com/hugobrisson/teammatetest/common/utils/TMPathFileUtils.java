@@ -25,3 +25,4 @@ public class TMPathFileUtils {
         return BitmapFactory.decodeFile(image.getAbsolutePath(), bmOptions);
     }
 }
+

@@ -22,7 +22,7 @@ public class User extends BaseModel {
     public static final String COLUMN_PROFILE_PHOTO = "profilePhoto";
     public static final String COLUMN_DESCRIPTION = "description";
     public static final String COLUMN_TUTORIALFINISHED = "tutorialFinished";
-    public static final String COLUMN_UPDATE = "updated";
+    public static final String COLUMN_LAST_UPDATED = "lastUpdated";
 
     @PrimaryKey
     @Column(name = COLUMN_ID)
@@ -52,8 +52,8 @@ public class User extends BaseModel {
     @Column(name = COLUMN_TUTORIALFINISHED)
     public boolean tutorialFinished = false;
 
-    @Column(name = COLUMN_UPDATE)
-    public long updated;
+    @Column(name = COLUMN_LAST_UPDATED)
+    public long lastUpdated;
 
 
     public User() {
@@ -199,13 +199,14 @@ public class User extends BaseModel {
         }
     }
 
-    public long getUpdated() {
-        return updated;
+    public long getLastUpdated() {
+        return lastUpdated;
     }
 
-    public void setUpdated(long updated) {
-        this.updated = updated;
+    public void setLastUpdated(long lastUpdated) {
+        this.lastUpdated = lastUpdated;
     }
+
 
 /*
     public List<String> getInfo() {

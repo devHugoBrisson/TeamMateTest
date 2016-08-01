@@ -1,4 +1,7 @@
 package com.hugobrisson.teammatetest.module.home;
 
-public class MainActivity {
+import android.support.v7.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
 }
+

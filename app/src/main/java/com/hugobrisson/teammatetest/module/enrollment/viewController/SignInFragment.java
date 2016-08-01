@@ -47,7 +47,6 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
 
     private SharedPreferences mPref;
     private AppCompatEditText mEtMail, mEtPassword;
-    private FloatingActionButton mBtFacebook, mBtGoogle;
     private AppCompatButton mBtLogIn;
     private AppCompatTextView mTvForgotPassword, mTvSignIn;
 
@@ -58,8 +57,6 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
         mEtMail = (AppCompatEditText) tLayout.findViewById(R.id.et_mail);
         mEtPassword = (AppCompatEditText) tLayout.findViewById(R.id.et_password);
         mBtLogIn = (AppCompatButton) tLayout.findViewById(R.id.bt_log_in);
-        mBtFacebook = (FloatingActionButton) tLayout.findViewById(R.id.bt_facebook);
-        mBtGoogle = (FloatingActionButton) tLayout.findViewById(R.id.bt_google_more);
         mTvForgotPassword = (AppCompatTextView) tLayout.findViewById(R.id.tv_forgot_password);
         mTvSignIn = (AppCompatTextView) tLayout.findViewById(R.id.tv_register);
         return tLayout;
@@ -71,9 +68,6 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
         mBtLogIn.setOnClickListener(this);
         mTvSignIn.setOnClickListener(this);
         mTvForgotPassword.setOnClickListener(this);
-        mBtFacebook.setOnClickListener(this);
-        mBtGoogle.setOnClickListener(this);
-
         mPref = PrefManager.getInstance(getContext());
         String mail = mPref.getString(TMConstantKey.PREF_MAIL, null);
         mEtMail.setText(mail);
@@ -86,16 +80,10 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
                 signIn();
                 break;
             case R.id.tv_register:
-                FragmentManager.changeFragment(getActivity().getSupportFragmentManager(), new RegisterFragment());
+                FragmentManager.changeFragment(getActivity().getSupportFragmentManager(), new RegisterFragment(),true);
                 break;
             case R.id.tv_forgot_password:
                 forgotPassword();
-                break;
-            case R.id.bt_facebook:
-                signInWithFacebook();
-                break;
-            case R.id.bt_google_more:
-                //  signInWithGoogle();
                 break;
         }
     }
@@ -190,36 +178,4 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
             }
         });
     }
-
-    private void signInWithFacebook() {
-        if (TMNetworkUtils.isNetworkAvailable(getContext())) {
-            TMAuthenticationManager.getInstance(getActivity()).signInWithFacebook(this, new ResponseListener<AuthResult>() {
-                @Override
-                public void onSuccess(AuthResult authResult) {
-
-                    //TODO sharePref mail and password;
-                    //TODO start main activity
-                }
-
-                @Override
-                public void onFailed(Exception e) {
-                    if (e != null) {
-                        SnackbarManager.show(getView(), getString(R.string.error_authentication_no_user));
-                    }
-
-                }
-            });
-        } else {
-            SnackbarManager.show(getView(), getString(R.string.error_no_internet));
-        }
-    }
-
-    private void signInWithGoogle() {
-        if (TMNetworkUtils.isNetworkAvailable(getContext())) {
-        } else {
-            SnackbarManager.show(getView(), getString(R.string.error_no_internet));
-        }
-    }
-
-
 }

@@ -29,3 +29,4 @@ public class DaoCommon<T extends BaseModel> implements DaoInterface<T> {
     }
 
 }
+

@@ -4,19 +4,15 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
-import android.view.View;
-import android.view.animation.AnimationUtils;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.hugobrisson.teammatetest.R;
 import com.hugobrisson.teammatetest.model.user.User;
 import com.hugobrisson.teammatetest.model.user.dao.UserDao;
-import com.hugobrisson.teammatetest.module.enrollment.SignInActivity;
 import com.hugobrisson.teammatetest.module.home.MainActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -68,5 +64,3 @@ public class SplashScreenActivity extends AppCompatActivity {
         shouldFinish = true;
     }
 }
-
-

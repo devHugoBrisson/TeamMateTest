@@ -77,3 +77,4 @@ public abstract class ActivityController extends AppCompatActivity implements Ac
         }
     }
 }
+

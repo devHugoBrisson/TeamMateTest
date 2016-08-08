@@ -45,3 +45,4 @@ public class FragmentTutorialController extends Fragment {
         ((CompleteRegisterActivity) mContext).setCurrentUserTutorial(user);
     }
 }
+

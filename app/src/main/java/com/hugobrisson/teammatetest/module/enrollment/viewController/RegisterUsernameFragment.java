@@ -74,3 +74,4 @@ public class RegisterUsernameFragment extends FragmentTutorialController {
         LocalBroadcastManager.getInstance(getContext()).unregisterReceiver(mReceiver);
     }
 }
+

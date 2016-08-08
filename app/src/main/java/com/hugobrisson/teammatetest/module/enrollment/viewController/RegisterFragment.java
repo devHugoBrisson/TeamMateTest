@@ -109,3 +109,4 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
 
 
 }
+

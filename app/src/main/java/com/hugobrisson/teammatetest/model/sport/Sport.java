@@ -70,3 +70,4 @@ public class Sport extends BaseModel {
         this.lastUpdated = lastUpdated;
     }
 }
+

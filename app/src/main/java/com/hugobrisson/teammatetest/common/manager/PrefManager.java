@@ -38,3 +38,4 @@ public class PrefManager{
         mInstance.edit().putLong(LONGITUDE, Double.doubleToLongBits(val)).apply();
     }
 }
+

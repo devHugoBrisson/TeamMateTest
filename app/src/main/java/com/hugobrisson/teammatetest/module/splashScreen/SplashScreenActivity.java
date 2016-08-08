@@ -17,6 +17,7 @@ import com.hugobrisson.teammatetest.R;
 import com.hugobrisson.teammatetest.model.user.User;
 import com.hugobrisson.teammatetest.model.user.dao.UserDao;
 import com.hugobrisson.teammatetest.module.enrollment.SignInActivity;
+import com.hugobrisson.teammatetest.module.home.MainActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -32,12 +33,13 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
                 FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
                 User user = UserDao.getInstance(SplashScreenActivity.this).getCurrentUser();
+                startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                /*
                 if (firebaseUser == null || user == null || !user.getTutorialFinished()) {
                     startActivityWithShareElement(new Intent(SplashScreenActivity.this, SignInActivity.class));
                 } else {
-                    // main activity
-                    //  startActivity(new Intent(SplashScreenActivity.this, CompleteRegisterActivity.class));
-                }
+                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                }*/
             }
         }, 3000);
     }

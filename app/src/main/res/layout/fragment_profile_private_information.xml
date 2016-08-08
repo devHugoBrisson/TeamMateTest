@@ -36,7 +36,7 @@
                             android:layout_height="60dp"
                             android:background="@drawable/background_circle"
                             android:padding="10dp"
-                            android:src="@mipmap/ic_cake_white_48dp"
+                            android:src="@mipmap/ic_home_white_24dp"
                             app:colorBackground="@color/colorNotificationMenu" />
 
                         <android.support.v7.widget.AppCompatTextView
@@ -83,7 +83,7 @@
                             android:layout_height="60dp"
                             android:background="@drawable/background_circle"
                             android:padding="10dp"
-                            android:src="@mipmap/ic_sign_man_48dp"
+                            android:src="@mipmap/ic_home_white_24dp"
                             app:colorBackground="@color/colorMan" />
 
                         <android.support.v7.widget.AppCompatTextView

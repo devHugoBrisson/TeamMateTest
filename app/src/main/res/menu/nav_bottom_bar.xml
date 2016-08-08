@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+    <item
+        android:id="@+id/action_home"
+        android:color="@color/colorPrimary"
+        android:icon="@mipmap/ic_home_white_24dp"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/action_activities"
+        android:color="@android:color/holo_green_dark"
+        android:icon="@mipmap/ic_local_activity_white_24dp"
+        android:title="Mes activités" />
+    <item
+        android:id="@+id/action_arround_me"
+        android:color="@android:color/holo_orange_dark"
+        android:icon="@mipmap/ic_room_white_24dp"
+        android:title="Autour de moi" />
+    <item
+        android:id="@+id/action_chat"
+        android:color="#FF5252"
+        android:icon="@mipmap/ic_message_white_24dp"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:color="#FF5252"
+        android:icon="@mipmap/ic_settings_white_24dp"
+        android:title="Paramètres" />
+</menu>

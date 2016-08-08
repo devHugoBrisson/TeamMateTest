@@ -35,7 +35,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_toLeftOf="@+id/iv_edit"
                 android:layout_toStartOf="@+id/iv_edit"
-                android:src="@mipmap/ic_delete_white_24dp"
+                android:src="@mipmap/ic_home_white_24dp"
                 android:visibility="invisible"
                 app:colorIcon="@color/colorSetting" />
 
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:src="@mipmap/ic_mode_edit_white_24dp"
+                android:src="@mipmap/ic_home_white_24dp"
                 app:colorIcon="@color/colorSetting" />
 
         </RelativeLayout>

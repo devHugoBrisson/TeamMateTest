@@ -65,7 +65,7 @@
                 android:id="@+id/iv_done_man"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_done_white_24dp"
+                android:src="@mipmap/ic_home_white_24dp"
                 android:visibility="visible" />
 
         </LinearLayout>
@@ -88,7 +88,7 @@
                 android:id="@+id/iv_done_woman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_done_white_24dp"
+                android:src="@mipmap/ic_home_white_24dp"
                 android:visibility="gone" />
 
         </LinearLayout>

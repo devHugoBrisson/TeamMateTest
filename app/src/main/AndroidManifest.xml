@@ -30,6 +30,10 @@
             android:screenOrientation="portrait" />
 
         <activity
+            android:name=".module.home.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
             android:name=".common.GenerateActivity"
             android:screenOrientation="portrait"/>
 

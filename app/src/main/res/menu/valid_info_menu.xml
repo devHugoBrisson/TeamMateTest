@@ -5,7 +5,7 @@
     tools:context=".module.home.HomeActivity">
     <item
         android:id="@+id/action_save"
-        android:icon="@mipmap/ic_done_white_24dp"
+        android:icon="@mipmap/ic_home_white_24dp"
         android:title="Enregistrer"
         app:showAsAction="always|collapseActionView" />
 </menu>

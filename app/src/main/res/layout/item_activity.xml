@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:src="@mipmap/ic_arrow_downward_white_18dp" />
+                    android:src="@mipmap/ic_home_white_24dp" />
 
                 <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/tv_end_time"
@@ -88,7 +88,7 @@
                     <com.hugobrisson.teammate.common.custom.TMImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_people_24dp"
+                        android:src="@mipmap/ic_home_white_24dp"
                         app:colorIcon="@android:color/secondary_text_dark" />
 
                     <android.support.v7.widget.AppCompatTextView
@@ -111,7 +111,7 @@
                     <com.hugobrisson.teammate.common.custom.TMImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_people_24dp"
+                        android:src="@mipmap/ic_home_white_24dp"
                         app:colorIcon="@android:color/secondary_text_dark" />
 
                     <android.support.v7.widget.AppCompatTextView
@@ -151,7 +151,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/background_small_circle"
                     android:padding="10dp"
-                    android:src="@mipmap/ic_euro_symbol_white_24dp"
+                    android:src="@mipmap/ic_home_white_24dp"
                     app:colorBackground="@color/colorMoney"
                     app:colorIcon="@color/colorMoney" />
 

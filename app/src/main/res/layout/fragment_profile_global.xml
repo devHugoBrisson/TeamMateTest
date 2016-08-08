@@ -79,7 +79,7 @@
                         android:layout_height="60dp"
                         android:background="@drawable/background_circle"
                         android:padding="10dp"
-                        android:src="@mipmap/ic_tag_faces_black_48dp"
+                        android:src="@mipmap/ic_home_white_24dp"
                         app:colorBackground="@color/colorChat" />
 
                     <android.support.v7.widget.AppCompatTextView
@@ -127,7 +127,7 @@
                         android:layout_height="60dp"
                         android:background="@drawable/background_circle"
                         android:padding="10dp"
-                        android:src="@mipmap/ic_local_activity_black_48dp"
+                        android:src="@mipmap/ic_home_white_24dp"
                         app:colorBackground="@color/colorActivity" />
 
                     <android.support.v7.widget.AppCompatTextView
